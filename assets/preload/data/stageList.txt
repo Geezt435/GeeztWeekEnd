@@ -1,3 +1,6 @@
 stage
 blackmarketstage
 blackmarkettrailstage
+nowherestageeasy
+nowherestage
+nowherestagehard

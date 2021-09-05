@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="deadgeezt.png">
+    <!-- IDLE -->
+    <SubTexture name="DeadGeezIdle0000" x="0" y="0" width="874" height="644" />
+    <SubTexture name="DeadGeezIdle0001" x="0" y="0" width="874" height="644" />
+    <SubTexture name="DeadGeezIdle0002" x="0" y="0" width="874" height="644" />
+    <SubTexture name="DeadGeezIdle0003" x="874" y="0" width="874" height="644" />
+    <SubTexture name="DeadGeezIdle0004" x="0" y="644" width="874" height="644" />
+    <SubTexture name="DeadGeezIdle0005" x="874" y="644" width="874" height="644" />
+    <!-- DOWN  -->
+    <SubTexture name="DeadGeezDown0000" x="0" y="1932" width="874" height="644" />
+    <SubTexture name="DeadGeezDown0001" x="874" y="1932" width="874" height="644" />
+    <SubTexture name="DeadGeezDown0002" x="874" y="1932" width="874" height="644" />
+    <SubTexture name="DeadGeezDown0003" x="874" y="1932" width="874" height="644" />
+    <!-- UP  -->
+    <SubTexture name="DeadGeezUp0000" x="0" y="1288" width="874" height="644" />
+    <SubTexture name="DeadGeezUp0001" x="874" y="1288" width="874" height="644" />
+    <SubTexture name="DeadGeezUp0002" x="874" y="1288" width="874" height="644" />
+    <SubTexture name="DeadGeezUp0003" x="874" y="1288" width="874" height="644" />
+    <!-- RIGHT  -->
+    <SubTexture name="DeadGeezRight0000" x="1748" y="1288" width="874" height="644" />
+    <SubTexture name="DeadGeezRight0001" x="1748" y="1932" width="874" height="644" />
+    <SubTexture name="DeadGeezRight0002" x="1748" y="1932" width="874" height="644" />
+    <SubTexture name="DeadGeezRight0003" x="1748" y="1932" width="874" height="644" />
+    <!-- LEFT  -->
+    <SubTexture name="DeadGeezLeft0000" x="1748" y="0" width="874" height="644" />
+    <SubTexture name="DeadGeezLeft0001" x="1748" y="644" width="874" height="644" />
+    <SubTexture name="DeadGeezLeft0002" x="1748" y="644" width="874" height="644" />
+    <SubTexture name="DeadGeezLeft0003" x="1748" y="644" width="874" height="644" />
+</TextureAtlas>

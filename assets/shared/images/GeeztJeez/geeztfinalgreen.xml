@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="geeztfinalgreen.png">
+    <!-- IDLE -->
+    <SubTexture name="GeezFinalIdle0000" x="0" y="0" width="874" height="644" />
+    <SubTexture name="GeezFinalIdle0001" x="0" y="0" width="874" height="644" />
+    <SubTexture name="GeezFinalIdle0002" x="0" y="0" width="874" height="644" />
+    <SubTexture name="GeezFinalIdle0003" x="874" y="0" width="874" height="644" />
+    <SubTexture name="GeezFinalIdle0004" x="0" y="644" width="874" height="644" />
+    <SubTexture name="GeezFinalIdle0005" x="874" y="644" width="874" height="644" />
+    <!-- DOWN  -->
+    <SubTexture name="GeezFinalDown0000" x="0" y="1932" width="874" height="644" />
+    <SubTexture name="GeezFinalDown0001" x="874" y="1932" width="874" height="644" />
+    <SubTexture name="GeezFinalDown0002" x="874" y="1932" width="874" height="644" />
+    <SubTexture name="GeezFinalDown0003" x="874" y="1932" width="874" height="644" />
+    <!-- UP  -->
+    <SubTexture name="GeezFinalUp0000" x="0" y="1288" width="874" height="644" />
+    <SubTexture name="GeezFinalUp0001" x="874" y="1288" width="874" height="644" />
+    <SubTexture name="GeezFinalUp0002" x="874" y="1288" width="874" height="644" />
+    <SubTexture name="GeezFinalUp0003" x="874" y="1288" width="874" height="644" />
+    <!-- RIGHT  -->
+    <SubTexture name="GeezFinalRight0000" x="1748" y="1288" width="874" height="644" />
+    <SubTexture name="GeezFinalRight0001" x="1748" y="1932" width="874" height="644" />
+    <SubTexture name="GeezFinalRight0002" x="1748" y="1932" width="874" height="644" />
+    <SubTexture name="GeezFinalRight0003" x="1748" y="1932" width="874" height="644" />
+    <!-- LEFT  -->
+    <SubTexture name="GeezFinalLeft0000" x="1748" y="0" width="874" height="644" />
+    <SubTexture name="GeezFinalLeft0001" x="1748" y="644" width="874" height="644" />
+    <SubTexture name="GeezFinalLeft0002" x="1748" y="644" width="874" height="644" />
+    <SubTexture name="GeezFinalLeft0003" x="1748" y="644" width="874" height="644" />
+</TextureAtlas>

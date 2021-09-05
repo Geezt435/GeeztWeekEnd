@@ -1,8 +1,9 @@
 bf
-dad
+deadbf
 gf
-bf-car
-bf-christmas
-gf-christmas
-bf-pixel
+gf-nospeaker
 geezt
+geeztfinalgreen
+geeztfinal
+deadgeezt
+madgeezt

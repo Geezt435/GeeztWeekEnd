@@ -158,6 +158,21 @@ class Note extends FlxSprite
 					if(FlxG.save.data.antialiasing) {
 						antialiasing = true;
 					}
+
+				case 'deadnote':
+					frames = Paths.getSparrowAtlas('DEAD_NOTE');
+					for (i in 0...4) {
+						animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+						animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+						animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
+					}
+
+					setGraphicSize(Std.int(width * 0.7));
+					updateHitbox();
+					
+					if(FlxG.save.data.antialiasing) {
+						antialiasing = true;
+					}
 						
 				case 'pixel':
 					loadGraphic(Paths.image('weeb/pixelUI/arrows-pixels', 'week6'), true, 17, 17);

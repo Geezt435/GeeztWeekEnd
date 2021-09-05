@@ -1,4 +1,4 @@
 normal
-pixel
 geeztnote
 geezthard
+deadnote

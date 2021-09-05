@@ -133,18 +133,16 @@ class TitleState extends MusicBeatState
 		}
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
 		logoBl.updateHitbox();
-		logoBl.color = 0xB72FC167;
 
-		geezDance = new FlxSprite(FlxG.width * 0.56, FlxG.height * 0.3); // Basically like x and y in .xml, the more the further it is from top left
+		geezDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0); // Basically like x and y in .xml, the more the further it is from top left
 		geezDance.frames = Paths.getSparrowAtlas('geezDance');
-		geezDance.animation.addByIndices('danceLeft', 'geezDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-		geezDance.animation.addByIndices('danceRight', 'geezDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+		geezDance.animation.addByIndices('danceLeft', 'geezDance', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], "", 20, false);
+		geezDance.animation.addByIndices('danceRight', 'geezDance', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], "", 20, false);
 		if(FlxG.save.data.antialiasing) {
 			geezDance.antialiasing = true;
 		}
 		geezDance.flipX = true;
-		geezDance.alpha = 0.3;
-		geezDance.setGraphicSize(Std.int(geezDance.width * 1.2));
+		geezDance.setGraphicSize(Std.int(geezDance.width * 0.7));
 		add(geezDance);
 		add(logoBl);
 

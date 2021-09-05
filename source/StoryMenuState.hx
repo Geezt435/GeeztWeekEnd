@@ -25,19 +25,37 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	static function weekData():Array<Dynamic>
-	{
-		return [
-			['Tutorial'],
-			['Echo Enzyme', 'Bioluminescent', 'Jeez']
-		];
-	}
+		{
+			#if debug
+				return [
+					['Tutorial'],
+					['Echo Enzyme', 'Bioluminescent', 'Overgrown'],
+					['Jeez']
+				];
+			#else
+				if(FlxG.save.data.secretWeek) {
+					return [
+						['Tutorial'],
+						['Echo Enzyme', 'Bioluminescent', 'Overgrown'],
+						['Jeez']
+					];
+				} else {
+					return [
+						['Tutorial'],
+						['Echo Enzyme', 'Bioluminescent', 'Overgrown']
+					];
+				}
+			#end
+		}
+
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true];
+	public static var weekUnlocked:Array<Bool> = [true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
-		['', 'bf', 'gf'],
-		['geezt', 'bf', 'gf']
+			['', 'bf', 'gf'],
+			['geezt', 'bf', 'gf'],
+			['in', 'the', 'end']
 	];
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
@@ -348,12 +366,15 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (weekUnlocked[curWeek])
 		{
-			if (stopspamming == false)
+			if (curWeek != 2 && stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
 				grpWeekText.members[curWeek].startFlashing();
 				grpWeekCharacters.members[1].animation.play('bfConfirm');
+				stopspamming = true;
+			} else if (curWeek == 2 && stopspamming == false) {
+				FlxG.sound.play(Paths.sound('confirmMenu'));
 				stopspamming = true;
 			}
 

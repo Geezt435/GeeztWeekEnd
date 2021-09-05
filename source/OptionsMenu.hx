@@ -38,6 +38,7 @@ class OptionsMenu extends MusicBeatState
 			new ResetButtonOption("Toggle pressing R to gameover."),
 			// new OffsetMenu("Get a note offset based off of your inputs!"),
 			new PreUnlockAllWeeksOption("Toggle whether to preUnlock all weeks no matter what"),
+			new SecretWeek("Initiate Secret Week"),
 			new CustomizeGameplay("Drag and drop gameplay modules to your prefered positions!")
 		]),
 		new OptionCategory("Appearance", [

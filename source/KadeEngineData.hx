@@ -7,6 +7,9 @@ class KadeEngineData
     public static function initSave()
     {
 		//JOELwindows7: PreUnlock weeks like in Stepmania Home mode
+		if (FlxG.save.data.secretWeek == null)
+			FlxG.save.data.secretWeek = false;
+
 		if (FlxG.save.data.preUnlocked == null)
 			FlxG.save.data.preUnlocked = false;
 		

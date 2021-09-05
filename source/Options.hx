@@ -958,3 +958,23 @@ class PreUnlockAllWeeksOption extends Option{
 		return "All Weeks " + (FlxG.save.data.preUnlocked ? "PreUnlocked" : "Lock Progress");
 	}
 }
+
+class SecretWeek extends Option{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+
+	public override function press():Bool
+	{
+		FlxG.save.data.secretWeek = !FlxG.save.data.secretWeek;
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{		
+		return "Secret Weeks " + (FlxG.save.data.secretWeek ? "Shown" : "Hidden");
+	}
+}
